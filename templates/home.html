@@ -1,0 +1,27 @@
+<html>
+<head>
+<title> Diabetes Predictor App By Vedant </title>
+<style>
+	*{font-size: 40px;}
+	body{background-color: pink;}
+	#btn{border-radius: 30px; background-color: #f89880;}
+	#btn:hover{ background-color: #e3e4fa; }
+</style>
+</head>
+<body>
+<center>
+	<h1> Diabetes Predictor </h1>
+	<form>
+	<input type="number" step="0.01" name="fs" required placeholder="Enter Fasting Sugar " />
+	<br/>	<br/>
+	Frequent Urination
+	<input type="radio" name="fu" value="yes" /> Yes
+	<input type="radio" name="fu" value="no" checked=true /> No
+	<br/>	<br/>
+	<input type="submit" value="Predict Diabetes" id="btn" />
+	</form>
+	{{ msg }}
+	
+</center>
+</body>
+</html>
